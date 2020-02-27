@@ -19,3 +19,7 @@ A Project Manager puts their project information in a Project Intake form in Sma
 ### Workflow
 
 Information input through the Smartsheet form is taken through their proprietary REST API. The JSON that is sent from their API is then used to create new folders from a target spot over the network. Using fs, the code locates the field that references the company name in the Smartsheet document. After it finds the file, it copies all of its contents and is renamed to our default standard at Way. This file is then moved to its target location where it will reside. After the whole process is complete, a date is added to the Date Created category in the Smartsheet. This application is set to run over a VM to insure accuracy, procision, and realtime information. 
+
+### Diagram
+
+[![PNG of Flowchart](/images/flowchart.png "Flowchart of Foldermover")]
